@@ -1,0 +1,22 @@
+@import 'custom-vue-scrollbar/dist/style.css';
+
+.scrollbar__thumb {
+  background: #00b3ff;
+  border-radius: 0px;
+}
+.scrollbar__thumb:hover {
+  background: #ff0088;
+}
+.scrollbar__thumb--vertical {
+  width: 100%;
+  opacity: 1;
+}
+.scrollbar__thumbPlaceholder {
+  z-index: 100;
+}
+
+@media only screen and (max-width: 640px) {
+  .scrollbar__thumbPlaceholder {
+    width: 4px;
+  }
+}
